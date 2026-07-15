@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>🇮🇹 五一意大利深度游攻略</title>
+  <link rel="stylesheet" href="lib/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Caveat:wght@500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 离线字体回退：当Google Fonts不可用时，自动使用系统字体 */
+    @font-face {
+      font-family: 'Noto Sans SC Fallback';
+      src: local('Noto Sans SC'), local('PingFang SC'), local('Microsoft YaHei'), local('Hiragino Sans GB');
+      font-weight: 300 700;
+      font-display: swap;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HERO -->
+  <div class="hero" id="hero">
+    <div class="hero-topbar">
+      <span class="hero-wordmark">Italia</span>
+      <span class="hero-year">'26</span>
+    </div>
+
+    <!-- 手绘涂鸦装饰层 -->
+    <div class="doodles" aria-hidden="true">
+      <!-- 珊瑚色爱心 -->
+      <svg class="doodle d1" viewBox="0 0 60 56" width="46" height="43"><path d="M30 52C10 38 4 26 4 16 4 8 10 3 17 3c6 0 10 4 13 9 3-5 7-9 13-9 7 0 13 5 13 13 0 10-6 22-26 36Z" fill="#EE5A32"/></svg>
+      <!-- 绿色小云朵块 -->
+      <svg class="doodle d2" viewBox="0 0 80 50" width="60" height="38"><path d="M20 44c-9 0-16-6-16-14 0-7 5-12 12-13 2-8 9-13 18-13 10 0 18 7 19 17 8 1 13 6 13 13 0 8-7 14-16 14Z" fill="#9CBE3B"/></svg>
+      <!-- 黑描边五角星 -->
+      <svg class="doodle d3" viewBox="0 0 64 64" width="42" height="42"><path d="M32 5l7 18 19 1-15 12 5 19-16-11-16 11 5-19-15-12 19-1Z" fill="none" stroke="#2C2620" stroke-width="3.2" stroke-linejoin="round"/></svg>
+      <!-- 蓝色云朵 -->
+      <svg class="doodle d4" viewBox="0 0 90 54" width="66" height="40"><path d="M24 48c-11 0-19-7-19-17 0-9 7-15 15-16 3-9 12-13 20-11 6-8 20-6 24 3 10-1 18 6 18 16 0 13-11 22-24 22Z" fill="#78ABE0"/></svg>
+      <!-- 珊瑚四角星闪 -->
+      <svg class="doodle d5" viewBox="0 0 60 60" width="40" height="40"><path d="M30 2c2 16 12 26 28 28-16 2-26 12-28 28-2-16-12-26-28-28 16-2 26-12 28-28Z" fill="#EE5A32"/></svg>
+      <!-- 黑描边爱心 -->
+      <svg class="doodle d6" viewBox="0 0 60 56" width="40" height="37"><path d="M30 52C10 38 4 26 4 16 4 8 10 3 17 3c6 0 10 4 13 9 3-5 7-9 13-9 7 0 13 5 13 13 0 10-6 22-26 36Z" fill="none" stroke="#2C2620" stroke-width="3"/></svg>
+      <!-- 黄色小太阳 -->
+      <svg class="doodle d7" viewBox="0 0 70 70" width="48" height="48"><circle cx="35" cy="35" r="13" fill="#F3BE45"/><g stroke="#F3BE45" stroke-width="3.4" stroke-linecap="round"><path d="M35 6v8M35 56v8M6 35h8M56 35h8M14 14l6 6M50 50l6 6M56 14l-6 6M20 50l-6 6"/></g></svg>
+      <!-- 卷曲线 -->
+      <svg class="doodle d8" viewBox="0 0 120 40" width="96" height="32"><path d="M4 20c14-18 26 18 40 0S84 2 98 20s18 2 18 2" fill="none" stroke="#2C2620" stroke-width="3" stroke-linecap="round"/></svg>
+      <!-- 手绘小飞机 -->
+      <svg class="doodle d9" viewBox="0 0 80 60" width="60" height="45"><path d="M6 40l68-30-22 44-12-18-16 12 2-14Z" fill="none" stroke="#2C2620" stroke-width="3" stroke-linejoin="round"/><path d="M40 32l12-8" stroke="#2C2620" stroke-width="3" stroke-linecap="round"/></svg>
+      <!-- 小圆点群 -->
+      <svg class="doodle d10" viewBox="0 0 40 40" width="26" height="26"><circle cx="10" cy="10" r="4" fill="#2C2620"/><circle cx="30" cy="20" r="5" fill="#78ABE0"/><circle cx="16" cy="30" r="3" fill="#EE5A32"/></svg>
+      <!-- 描边四角星 -->
+      <svg class="doodle d11" viewBox="0 0 60 60" width="34" height="34"><path d="M30 4c2 16 10 24 26 26-16 2-24 10-26 26-2-16-10-24-26-26 16-2 24-10 26-26Z" fill="none" stroke="#2C2620" stroke-width="3" stroke-linejoin="round"/></svg>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-overline">ITALY · 2026 · 七天六夜</div>
+      <h1 class="hero-title">Ciao,<br><span class="soft">五一意大利深度游</span></h1>
+      <p class="hero-sub">从罗马的古老回响，<br>到佛罗伦萨的文艺复兴。</p>
+      <div class="hero-cities">
+        <span class="hero-city-tag">🏛️ 罗马 Roma</span>
+        <span class="hero-city-tag">🎨 佛罗伦萨 Firenze</span>
+      </div>
+      <div class="hero-cta-row">
+        <button class="hero-cta" onclick="scrollToMain()">开始规划 →</button>
+        <div class="hero-cta-note">4.30 — 5.7 返程<span>共 7 天 6 晚</span></div>
+      </div>
+    </div>
+
+    <div class="hero-baseline" aria-hidden="true">
+      <svg viewBox="0 0 400 20" preserveAspectRatio="none" width="100%" height="18"><path d="M4 12C60 4 120 16 200 10s150-10 196 2" fill="none" stroke="#2C2620" stroke-width="2.4" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="scroll-indicator" onclick="scrollToMain()"><span></span></div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="page-content" id="mainPage">
+    <div class="section fade-in">
+      <div class="section-title"><span class="emoji">📋</span> 行程总览</div>
+      <div class="overview-timeline" id="overviewTimeline"></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title"><span class="emoji">✈️</span> 航班信息</div>
+      <div class="info-card">
+        <div class="flight-row">
+          <div class="flight-label">去程 · 5月1日</div>
+          <div class="flight-main">SZX 00:45 → DXB 05:05 → FCO 13:25</div>
+          <div class="flight-sub">阿联酋航空 EK329/EK97 · 迪拜中转4h5min</div>
+        </div>
+        <div class="flight-divider"></div>
+        <div class="flight-row">
+          <div class="flight-label">返程 · 5月6日</div>
+          <div class="flight-main">FCO 22:10 → DXB 05:50 → SZX 22:40+1</div>
+          <div class="flight-sub">阿联酋航空 EK96/EK328 · 迪拜中转5h35min</div>
+        </div>
+        <div class="flight-tip">✅ 行李直达，迪拜无需过境签</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="ticket-alert" onclick="showTicketPage()">
+        <div style="font-size:32px;margin-bottom:8px;">🎫</div>
+        <div class="ticket-alert-title">门票预约提醒</div>
+        <div class="ticket-alert-sub">距出发仅2周！7个景点需提前预约</div>
+        <div class="ticket-alert-link">点击查看详细购票清单 →</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB BAR -->
+  <div class="tab-bar" id="tabBar">
+    <button class="tab-item active" onclick="showMain()"><span class="tab-icon">🗺️</span>行程</button>
+    <button class="tab-item" onclick="showTicketPage()"><span class="tab-icon">🎫</span>门票</button>
+    <button class="tab-item" onclick="showFoodPage()"><span class="tab-icon">🍕</span>美食</button>
+    <button class="tab-item" onclick="showChecklistPage()"><span class="tab-icon">✅</span>清单</button>
+  </div>
+
+  <!-- DAY DETAIL PAGE -->
+  <div class="day-page" id="dayPage">
+    <div class="day-header">
+      <button class="back-btn" onclick="closeDayPage()">←</button>
+      <div class="day-header-info"><h3 id="dayPageTitle"></h3><p id="dayPageSub"></p></div>
+    </div>
+    <div class="day-nav" id="dayNav"></div>
+    <div id="dayPageContent"></div>
+  </div>
+
+  <!-- SPOT DETAIL MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+  <div class="modal" id="spotModal">
+    <div class="modal-handle" onclick="closeModal()"><span></span></div>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <!-- TICKET PAGE -->
+  <div class="ticket-page" id="ticketPage">
+    <div class="day-header">
+      <button class="back-btn" onclick="closeTicketPage()">←</button>
+      <div class="day-header-info"><h3>🎫 门票预约清单</h3><p>需要提前预约购票的景点</p></div>
+    </div>
+    <div class="ticket-list" id="ticketList"></div>
+  </div>
+
+  <!-- FOOD PAGE -->
+  <div class="food-page" id="foodPage">
+    <div class="day-header">
+      <button class="back-btn" onclick="closeFoodPage()">←</button>
+      <div class="day-header-info"><h3>🍕 美食地图</h3><p>罗马 & 佛罗伦萨必吃清单</p></div>
+    </div>
+    <div id="foodMapContainer" class="map-container" style="margin:12px 16px;height:300px;"></div>
+    <div id="foodContent" style="padding-bottom:40px;"></div>
+  </div>
+
+  <!-- CHECKLIST PAGE -->
+  <div class="checklist-page" id="checklistPage">
+    <div class="day-header">
+      <button class="back-btn" onclick="closeChecklistPage()">←</button>
+      <div class="day-header-info"><h3>✅ 出发前 Checklist</h3><p>点击勾选已完成的准备事项</p></div>
+    </div>
+    <div id="checklistContent" style="padding-top:12px;padding-bottom:80px;"></div>
+  </div>
+
+  <script src="lib/leaflet.js"></script>
+  <script src="data.js?v=20260715"></script>
+  <script src="app.js?v=20260715"></script>
+</body>
+</html>

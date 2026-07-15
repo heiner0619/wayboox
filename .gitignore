@@ -1,0 +1,7 @@
+# 不需要部署到网页的文件
+travel-itinerary-builder.zip
+travel-itinerary-builder/
+
+# 系统 / 编辑器
+.DS_Store
+*.log

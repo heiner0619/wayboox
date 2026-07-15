@@ -2,6 +2,10 @@
 travel-itinerary-builder.zip
 travel-itinerary-builder/
 
+# 敏感 / 配置文件
+.env
+.codebuddy/
+
 # 系统 / 编辑器
 .DS_Store
 *.log

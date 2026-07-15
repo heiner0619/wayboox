@@ -6,7 +6,7 @@
 
 ## ✨ 在线预览
 
-开启 GitHub Pages 后访问：**https://fengrui.github.io/wayboox/**
+开启 GitHub Pages 后访问：**https://heiner0619.github.io/wayboox/**
 
 ## 🗺️ 功能亮点
 
@@ -40,13 +40,19 @@
 
 ## 🚀 本地运行
 
-由于使用了本地地图资源，建议用本地服务器打开（直接双击 `index.html` 也可，但地图瓦片可能受限）：
+由于使用了本地地图资源，建议用本地服务器打开（直接双击 `index.html` 也可，但地图瓦片可能受限）。先进入项目目录，再启动服务：
 
 ```bash
-# Python 3
+# 1. 进入项目目录（改成你自己 clone 后的路径）
+cd wayboox
+
+# 2. 用 Python 3 起一个本地服务器
 python3 -m http.server 8000
-# 然后浏览器访问 http://localhost:8000
 ```
+
+启动后在浏览器打开 **http://localhost:8000** 即可。
+
+> 没装 Python 也可以用 Node：`npx serve`，或直接用 VS Code 的 Live Server 插件打开 `index.html`。
 
 ## 🛠️ 技术栈
 
